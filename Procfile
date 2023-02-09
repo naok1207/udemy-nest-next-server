@@ -1,1 +1,1 @@
-web: bun run start:prod
+web: yarn run start:prod

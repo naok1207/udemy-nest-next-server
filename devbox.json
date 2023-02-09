@@ -1,0 +1,16 @@
+{
+  "packages": ["postgresql"],
+  "shell": {
+    "init_hook": [
+      "export PS1='📦 devbox> '",
+      "devbox services start",
+      "trap 'devbox services stop' EXIT"
+    ],
+    "scripts": {
+      "initdb": "initdb -U postgres -W"
+    }
+  },
+  "nixpkgs": {
+    "commit": "f80ac848e3d6f0c12c52758c0f25c10c97ca3b62"
+  }
+}
